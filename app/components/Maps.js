@@ -39,6 +39,7 @@ export default class App extends Component {
         const lat=position.coords.latitude
         const lon=position.coords.longitude
         const accuracy=position.coords.accuracy
+        alert(JSON.stringify(position))
         this.calcDelta(lat,lon,accuracy)
       }
     )
